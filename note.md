@@ -12,3 +12,5 @@ now we can start the server using below command instead
     php artisan serve
 create a database as below
     lumen_product_api_database
+generate product table in our database using below command
+    php artisan make:model Product -m
