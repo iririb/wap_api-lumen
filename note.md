@@ -14,3 +14,6 @@ create a database as below
     lumen_product_api_database
 generate product table in our database using below command
     php artisan make:model Product -m
+migrate to the database
+    php artisan migrate
+    if you facing the error driver not found, locate the php.ini and make sure to uncomment, from ";extension=pdo_mysql" to "extension=pdo_mysql"
