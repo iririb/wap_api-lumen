@@ -13,6 +13,12 @@
 |
 */
 
+$router->get('/product', 'ProductController@index');
+$router->get('/product/{id}', 'ProductController@show');
+$router->post('/product/create', 'ProductController@store');
+$router->post('/product/update/{id}', 'ProductController@update');
+$router->delete('/product/delete/{id}', 'ProductController@destroy');
+
 $router->get('/', function () use ($router) {
     return $router->app->version();
 });

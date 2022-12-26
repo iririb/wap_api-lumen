@@ -17,3 +17,7 @@ generate product table in our database using below command
 migrate to the database
     php artisan migrate
     if you facing the error driver not found, locate the php.ini and make sure to uncomment, from ";extension=pdo_mysql" to "extension=pdo_mysql"
+create a controller
+    php artisan make:Controller ProductController --resource
+    controller name has to be match with model
+sample body for the project need to use postman as we need to send file using it
